@@ -1,0 +1,50 @@
+
+c Regras do Clube Desportivo de Ribeirão
+c
+c  1 Sócio usa bigode
+c  2 Sócio é de Ribeirão
+c  3 Sócio é casado
+c  4 Sócio usa camisola amarela
+c  5 Sócio assiste aos jogos de domingo
+c
+c Todos os sócios que usam bigode são casados.
+c -1 \/ 3
+c Cada sócio do clube que não é de Ribeirão tem que usar camisola amarela.
+c 2 \/ 4
+c Os sócios casados não podem assistir aos jogos ao Domingo.
+c -3 \/ -5
+c Um sócio vai aos jogos ao Domingo se e só se é de Ribeirão.
+c -5 \/ 2
+c -2 \/ 5
+c Cada sócio usa bigode ou não usa camisola amarela.
+c 1 \/ -4
+c Todos os sócios de Ribeirão usam bigode.
+c -2 \/ 1
+
+
+c A afirmação "Quem usa bigode não pode ir ao jogo ao Domingo" é correcta?
+c -1 \/ -5
+
+c Pode um membro de camisola amarela ser casado?
+c 4
+c 3
+
+c Afinal o clube não pode ter sócios Ribeironenses?
+c -2
+
+c Os sócios casados têm todos bigode
+c -3 \/ 1
+
+c Ao domingo nunca há sócios a assistir aos jogos
+c -5
+
+p cnf 5 7
+-1 3 0
+2 4 0
+-3 -5 0
+-5 2 0
+-2 5 0
+1 -4 0
+-2 1 0
+
+
